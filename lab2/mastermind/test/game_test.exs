@@ -102,19 +102,19 @@ defmodule GameTest do
   # lab3
   @tag :skip
   test "if the last game is a winner the game is a winner" do
-    assert Game.won?(four_move_winner)
-    refute Game.won?(four_move_nonwinner)
+    assert Game.won?(four_move_winner())
+    refute Game.won?(four_move_nonwinner())
   end
   
   @tag :skip
   test "won games are finished" do
-    assert Game.finished?(four_move_winner)
-    refute Game.finished?(four_move_nonwinner)
+    assert Game.finished?(four_move_winner())
+    refute Game.finished?(four_move_nonwinner())
   end
   
   @tag :skip
   test "games are finished after 10 moves" do
-    assert Game.finished?(ten_move_loser)
+    assert Game.finished?(ten_move_loser())
   end
   
   @tag :skip
