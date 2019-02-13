@@ -32,6 +32,35 @@ In this lab, we're going to build a version of the [Master Mind](http://www.webg
 
 This is what you need to know about Elixir to finish this lab. 
 
+## Running Tests
+
+In Elixir, you want to be in the root directory of your project. For us, that's `mastermind`. These are the important files: 
+
+- Your program goes in `mastermind/lib`
+- Your tests go in `mastermind/test`
+
+To compile and run tests, run 
+
+```
+mix test
+```
+
+To run an interactive Elixir console, run 
+
+```
+iex
+```
+
+Type control-c twice to exit. (Windows will depend on how you installed.)
+
+To run your program in the console, run 
+
+```
+iex -S mix
+```
+
+
+
 ## Maps and Structs
 
 An *atom* is a 
