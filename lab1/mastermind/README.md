@@ -11,6 +11,8 @@
 
 Your job is to make all of the tests pass in test/game_test.exs. One by one, move the @tag :skip tags from each test. Run the tests, and make the changes in the code to make the test pass. 
 
+Your tests will guide you toward opening up the file in `lib/core/game.ex` and add a struct to it. 
+
 
 # Mastermind
 
@@ -30,11 +32,17 @@ In this lab, we're going to build a version of the [Master Mind](http://www.webg
 
 This is what you need to know about Elixir to finish this lab. 
 
-## Structs
+## Maps and Structs
 
 An *atom* is a 
 
 A *map* is a data structure that has keys and values. You'll specify a map like this: 
+
+```Elixir
+%{ :name => "Bruce", :age => 53 }
+```
+
+The `%{}` is the delimiter for a map. The `:name` is an atom (like a symbol in Ruby or a user-defined class name in Java). If the first element of a map is an atom, you can use a convenient shorthand, like this: 
 
 ```Elixir
 %{ name: "Bruce" }
@@ -55,3 +63,9 @@ Then you can use the struct like this:
 ```Elixir
 %Person{ name: "Bruce", age: 53 }
 ```
+
+Note that `%{ key: value }` is shorthand for `%{ :key => value }`. 
+
+
+
+Learn more about structs  at https://elixir-lang.org/getting-started/structs.html . 
