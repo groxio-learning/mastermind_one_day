@@ -7,7 +7,7 @@ defmodule Mastermind.Core.Game do
   
   def new(answer \\ nil) do
     %__MODULE__{
-      answer: random_answer(answer)
+      answer: answer || random_answer(answer)
     }
   end
   

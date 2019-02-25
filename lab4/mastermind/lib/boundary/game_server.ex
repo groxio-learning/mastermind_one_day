@@ -5,28 +5,22 @@ defmodule Mastermind.Boundary.GameServer do
   # Client
       
     def start_link(answer) when is_list(answer) do
-      GenServer.start_link(__MODULE__, Game.new(answer))
     end
   
-    def move(pid, answer) do
-      GenServer.call(pid, {:move, answer})
+    def move(_pid, _answer) do
     end
   
-    def state(pid) do
-      GenServer.call(pid, :state)
+    def state(_pid) do
     end
   
     # Server (callbacks)
   
-    def init(game) do
-      {:ok, game}
+    def init(_game) do
     end
   
-    def handle_call({:move, answer}, _from, game) do
-      {:reply, :ok, Game.move(game, answer)}
+    def handle_call({:move, _answer}, _from, _game) do
     end
   
-    def handle_call(:state, _from, game) do
-      {:reply, Game.state(game), game }
+    def handle_call(:state, _from, _game) do
     end
 end
