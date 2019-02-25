@@ -1,6 +1,10 @@
+# Mastermind
+
+Mastermind is a game between two people or a person and a computer. One person places a code of four different colors and one person has ten tries to guess the code. We'll use numbers from 1-6 instead of colors. 
+
 # Lab Flow
 
-1. Clone the lab at https://github.com/groxio-learning/mastermind_one_day/tree/master/lab1/mastermind
+1. Clone the lab at https://github.com/groxio-learning/mastermind_one_day/
 
   cd your/directory/name/lab1
   git clone https://github.com/groxio-learning/mastermind_one_day/tree/master/lab1/mastermind
@@ -14,7 +18,7 @@ Your job is to make all of the tests pass in test/game_test.exs. One by one, mov
 Your tests will guide you toward opening up the file in `lib/core/game.ex` and add a struct to it. 
 
 
-# Mastermind
+# Mastermind Lab 1
 
 In this lab, we're going to build a version of the [Master Mind](http://www.webgamesonline.com/mastermind/) game. Here are the rules: 
 

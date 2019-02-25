@@ -1,6 +1,6 @@
 # Mastermind
 
-**TODO: Add description**
+Mastermind is a game between two people or a person and a computer. One person places a code of four different colors and one person has ten tries to guess the code. We'll use numbers from 1-6 instead of colors. 
 
 # Universe for Labs 2 and 3 
 
@@ -33,13 +33,17 @@ end
 See https://hexdocs.pm/elixir/Kernel.SpecialForms.html for details. (I googled Elixir __MODULE__)
 
 
-## Lab 2: Computing Scores
+# Lab 2: Computing Scores
 
 When you're computing scores for your mastermind game, you'll work with three data structures. 
 
 - The `answer` is the actual correct code. 
 - The `guess` is a user's attempt to guess the correct code. 
-- The `score` is the number of reds and whites. A red is the correct number (or peg) in the correct location; a white peg is a correct number in the wrong location; a miss is an incorrect location. Each number from the guess will be either a red, a white, or nothing. It can't be more than one. 
+- The `score`  (see below)
+
+## Lab 2: Computing the Score
+
+In this lab, you'll compute the score of a turn. A score is the number of reds and whites. A red is the correct number (or peg) in the correct location; a white peg is a correct number in the wrong location; a miss is an incorrect location. Each number from the guess will be either a red, a white, or nothing. It can't be more than one. 
 
 ## List Subtraction
 
@@ -128,10 +132,7 @@ magic_number = 42
 ```
 
 
-
-
-
-
+# Lab 3: Advancing the Game
 
 ## Working With the Game 
 
@@ -168,17 +169,10 @@ You can make an argument optional like this:
 
 ```elixir
   def def say( something \\ "hi") do
-    something
+    IO.puts something
   end
-  
-  defp help_compute_score() do
-  end
-  ...
 end
 ``` 
-
-
-
 
 ### Enum Functions
 
@@ -206,12 +200,10 @@ So if you're starting with a list and you want to sort them and look at the firs
   |> Enum.take(4)
 ```
 
-## Making a List of Random Numbers
+## Making a List of Random Numbers (includes spoilers)
 
 You will want to combine some of the functions above in a pipe. I recommend using shuffle rather than building a list of 6 distinct random numbers, but both approaches work. 
 
-
-
-
+One way to solve the problem is to make a list of numbers from 1-6, shuffle them, and take four. 
 
 

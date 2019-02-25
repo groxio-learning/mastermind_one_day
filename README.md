@@ -15,7 +15,7 @@ The layers are:
 
 # Using Elixir to Solve a Nontrivial Problem
 
-In short, this lab is about deisgn, and how to build software in chunks that are easy to deploy in units and build in pieces. We will use the same strategies in the upcoming book by James Gray and Bruce Tate, tentatively called Designing Elixir Systems with OTP. 
+In short, this lab is about deisign, and how to build software in chunks that are easy to deploy in units and build in pieces. We will use the same strategies in the upcoming book by James Gray and Bruce Tate, tentatively called Designing Elixir Systems with OTP. 
 
 ## The Sandbox
 
