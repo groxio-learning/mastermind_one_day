@@ -1,3 +1,3 @@
 defmodule Mastermind.Core.Score do
-  defstruct []
+  defstruct [:reds, :whites]
 end
