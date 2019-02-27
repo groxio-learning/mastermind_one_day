@@ -69,9 +69,10 @@ You can use this list subtraction to find the number of misses in your lab.
 
 These are a few Enum functions that will help you. 
 
-- Enum.filter(list, fn) will return all items of the list that return true for fn. For example, `Enum.filter([1, 2, 3], Integer.is_even/1)` would return `[2]`.
+- `Enum.filter(list, fn)` will return all items of the list that return true for fn. For example, `Enum.filter([1, 2, 3], Integer.is_even/1)` would return `[2]`.
 - Enum.zip(list1, list2) will make a list of tuples from the first elements, second elements, etc. So `Enum.zip([1, 2, 3], [:a, :b, :c])` would give you [{1, :a}, {2, :b}, {3, :c}]
 - `Enum.count(list)` counts the elements in `list`. `length` does the same thing.
+- `length(list)` returns the length of a list. 
 
 Find more at https://hexdocs.pm/elixir/Enum.html (I googled for Elixir Enum)
 
@@ -178,9 +179,12 @@ end
 
 These are a few Enum functions that will help you. 
 
-- Enum.take(list, n) will take the first n elements of a list
-- Enum.sort(list) will sort a list
-- Enum.shuffle(list) will sort the list in a random order
+- `Enum.take(list, n)` will take the first n elements of a list
+- `Enum.sort(list)` will sort a list
+- `Enum.shuffle(list)` will sort the list in a random order
+- `Enum.map(list, fn)` will collect the results of calling fn(item) for every item in the list.
+
+
 
 Find more at https://hexdocs.pm/elixir/Enum.html (I googled for Elixir Enum)
 
